@@ -1,0 +1,8 @@
+
+div {
+    height: 250px;
+    /* height set in pixels */
+    width: 60%;
+    /* width set in percentage */
+    background-color: lightsalmon;
+}

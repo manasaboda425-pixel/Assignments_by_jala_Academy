@@ -1,0 +1,55 @@
+
+
+.animated-square {
+    /* these are the properties of the moving box in the web page */
+    background-color: #008080;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    animation-name: slideRight;
+    /* we specify the type of animation and also its parameters */
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+.page-menu {
+    /* these are the properties of the below pagination
+  these specify the basic size and colour when hovering and also style */
+    display: inline-block;
+}
+
+.page-menu a {
+    border: 2px solid #b2d8d8;
+}
+
+.page-menu a {
+    color: #333;
+    float: left;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.page-menu a {
+    margin: 0 5px;
+    /* this adds the spaces between buttons */
+}
+
+.page-menu a.active {
+    background-color: #008080;
+    color: white;
+}
+
+.page-menu a:hover:not(.active) {
+    background-color: #e0f2f2;
+}

@@ -1,0 +1,9 @@
+
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg");
+    background-color: #e0e0e0;
+    background-attachment: fixed;
+    /* prevents the background from scrolling */
+    background-size: cover;
+    /* specifies the size of the background image */
+}

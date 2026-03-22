@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q5 Accessing JSON Data with Dot Notation</h2>
+    <p id="output-field"></p>
+
+    <script>
+        const dataString = '{"product":"Smartphone", "brand":"Pixel", "available":true}';
+        const parsedData = JSON.parse(dataString);
+        document.getElementById("output-field").innerHTML = parsedData.brand;
+    </script>
+</body>
+
+</html>

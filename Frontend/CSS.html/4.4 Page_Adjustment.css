@@ -1,0 +1,49 @@
+
+
+#box-0 {
+    padding: 25px;
+    /* this is to specify the padding dimensions */
+}
+
+#box-1 {
+    padding-bottom: 30px;
+    /* this is to specify the padding bottom dimensions */
+}
+
+#box-2 {
+    margin: 25px 50px 75px;
+    /* top, left/right, bottom */
+}
+
+#box-3 {
+    margin: 10px 20px 30px 40px;
+    /* top, right, bottom, left */
+}
+
+/* general layout styling */
+.outer-box {
+    background-color: #3498db;
+    display: inline-block;
+    margin: 15px;
+}
+
+div {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.inner-item {
+    background-color: #f1c40f;
+    border-radius: 5px;
+    color: #2c3e50;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}

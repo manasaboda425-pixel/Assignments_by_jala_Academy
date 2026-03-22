@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CLICK TRACKER</title>
+</head>
+
+<body>
+    <h4>Q3 Increment Button</h4>
+
+    <button id="clicker">Press Me!</button>
+
+    <p>Total clicks recorded: <span id="numDisplay">0</span></p>
+
+    <script type="text/javascript">
+        var clickCount = 0;
+        var myBtn = document.getElementById("clicker");
+        var output = document.getElementById("numDisplay");
+
+        // Function to handle the count update
+        myBtn.onclick = function () {
+            clickCount = clickCount + 1;
+            output.innerHTML = clickCount;
+        };
+    </script>
+</body>
+
+</html>

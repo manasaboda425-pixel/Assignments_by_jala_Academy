@@ -1,0 +1,22 @@
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+table.t1 {
+    table-layout: fixed;
+    /* specifying table layout as fixed */
+    width: 200px;
+}
+
+table.t2 {
+    table-layout: auto;
+    /* specifying table layout as auto */
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+
+body {
+    /*this is for the background area*/
+    background-color: #f4f4f4;
+}
+
+#mainContainer {
+    /*this is the main wrapper box*/
+    height: 320px;
+    background-color: #ffffff;
+}
+
+.scrollBox {
+    /*this is the text column itself*/
+    background-color: lightgreen;
+    width: 160px;
+    height: 110px;
+    overflow: scroll;
+}

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function checkInput() {
+            // Accessing the value of the 'user' field in 'entryForm'
+            var userInput = document.forms["entryForm"]["username"].value;
+
+            if (userInput == "" || userInput == null) {
+                alert("Please provide a username before submitting.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Q2 JavaScript Form Validation</h2>
+
+    <form name="entryForm" action="/submit_data.php" onsubmit="return checkInput()" method="post">
+        Username: <input type="text" name="username" />
+        <input type="submit" value="Register" />
+    </form>
+</body>
+
+</html>

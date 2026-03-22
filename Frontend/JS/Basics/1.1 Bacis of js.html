@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q3 Iterating with for/in Loop</h2>
+    <p>The for...in loop is used here to go through each property of the object:</p>
+
+    <p id="result-output"></p>
+
+    <script>
+        // Defining a book object instead of a person
+        const book = { title: "Atomic Habits", author: "James Clear", year: 2018 };
+
+        let bookInfo = "";
+
+        // The for...in loop iterates through each key in the 'book' object
+        for (let prop in book) {
+            // We use the property key to access the value and append it to the string
+            bookInfo += book[prop] + " | ";
+        }
+
+        // Display the final string in the paragraph
+        document.getElementById("result-output").innerHTML = bookInfo;
+    </script>
+</body>
+
+</html>
