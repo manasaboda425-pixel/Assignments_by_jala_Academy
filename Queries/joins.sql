@@ -1,0 +1,38 @@
+-- Q41: Salespeople pairs in same city.
+SELECT S1.SNAME, S2.SNAME FROM SALESPEOPLE S1, SALESPEOPLE S2
+WHERE S1.CITY = S2.CITY AND S1.SNUM < S2.SNUM;
+
+-- Q42: Orders of Hoffman.
+SELECT * FROM ORDERS WHERE CNUM =
+(SELECT CNUM FROM CUST WHERE CNAME='Hoffman');
+
+-- Q43: Orders of Motika.
+SELECT * FROM ORDERS WHERE SNUM =
+(SELECT SNUM FROM SALESPEOPLE WHERE SNAME='Motika');
+
+-- Q44: Orders by same salesperson as Hoffman.
+SELECT * FROM ORDERS WHERE SNUM =
+(SELECT SNUM FROM CUST WHERE CNAME='Hoffman');
+
+-- Q45: Orders greater than Oct 4 average.
+SELECT * FROM ORDERS WHERE AMT >
+(SELECT AVG(AMT) FROM ORDERS WHERE ODATE='1994-10-04');
+
+-- Q46: Avg commission in London.
+SELECT AVG(COMM) FROM SALESPEOPLE WHERE CITY='London';
+
+-- Q47: Orders for customers in London.
+SELECT * FROM ORDERS WHERE SNUM IN
+(SELECT SNUM FROM CUST WHERE CITY='London');
+
+-- Q48: Commissions of salespeople serving London.
+SELECT COMM FROM SALESPEOPLE WHERE SNUM IN
+(SELECT SNUM FROM CUST WHERE CITY='London');
+
+-- Q49: Customers with cnum = snum+1000 of Serres.
+SELECT * FROM CUST WHERE CNUM =
+(SELECT SNUM+1000 FROM SALESPEOPLE WHERE SNAME='Serres');
+
+-- Q50: Customers above San Jose avg rating.
+SELECT COUNT(*) FROM CUST WHERE RATING >
+(SELECT AVG(RATING) FROM CUST WHERE CITY='San Jose');
