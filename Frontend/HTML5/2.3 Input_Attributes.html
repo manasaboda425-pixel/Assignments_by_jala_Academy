@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Restrictions</title>
+</head>
+
+<body>
+    <h1>
+        Testing input restrictions: disabled, max, maxlength, min, readonly,
+        required, size, value
+    </h1>
+    <form>
+        <label for="city">City:</label><br />
+        <input type="text" id="city" name="city" value="Chicago" disabled /><br />
+        <label for="state">State:</label><br />
+        <input type="text" id="state" name="state" value="IL" />
+    </form>
+    <br />
+    <form>
+        <label for="pastdate">Enter a date before 1990-12-31:</label><input type="date" id="pastdate" name="pastdate"
+            max="1990-12-30" /><br /><br />
+
+        <label for="futuredate">Enter a date after 2025-01-01:</label><input type="date" id="futuredate"
+            name="futuredate" min="2025-01-02" /><br /><br />
+
+        <label for="tickets">Tickets (between 1 and 10):</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" />
+    </form>
+    <br />
+    <form>
+        <label for="street">Street Address:</label><br /><input type="text" id="street" name="street" size="50" /><br />
+        <label for="zipcode">Zip Code:</label><br /><input type="text" id="zipcode" name="zipcode" maxlength="5"
+            size="5" />
+    </form>
+    <br />
+    <form>
+        <label for="userid">User ID:</label><br />
+        <input type="text" id="userid" name="userid" value="User998" readonly /><br />
+        <label for="nickname">Nickname:</label><br />
+        <input type="text" id="nickname" name="nickname" value="Speedy" />
+    </form>
+    <br />
+    <form>
+        <label for="emailAddr">Email Address:</label><input type="text" id="emailAddr" name="emailAddr" required />
+    </form>
+    <br />
+    <form>
+        <label for="company">Company Name:</label><br />
+        <input type="text" id="company" name="company" size="50" /><br />
+        <label for="deptCode">Dept Code:</label><br />
+        <input type="text" id="deptCode" name="deptCode" size="4" />
+    </form>
+    <br />
+    <form>
+        <label for="carmake">Car Make:</label><br />
+        <input type="text" id="carmake" name="carmake" value="Toyota" /><br />
+        <label for="carmodel">Car Model:</label><br />
+        <input type="text" id="carmodel" name="carmodel" value="Camry" />
+    </form>
+</body>
+
+</html>

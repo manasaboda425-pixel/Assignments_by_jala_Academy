@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q5 Adding properties with Object Prototype</h2>
+
+    <p id="output-text"></p>
+
+    <script>
+        // Constructor function for a Member object
+        function Member(first, last, years, dept) {
+            this.fName = first;
+            this.lName = last;
+            this.age = years;
+            this.department = dept;
+        }
+
+        // Adding a property to the prototype so all instances inherit it
+        Member.prototype.organization = "Global Tech";
+
+        // Creating a new instance
+        const user = new Member("Arjun", "Sharma", 25, "Engineering");
+
+        // Displaying the prototype property
+        document.getElementById("output-text").innerHTML =
+            "Workplace: " + user.organization;
+    </script>
+</body>
+
+</html>

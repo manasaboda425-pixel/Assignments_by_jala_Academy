@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* visibility properties */
+        h2.show-me {
+            visibility: visible;
+        }
+
+        h2.hide-me {
+            visibility: hidden;
+        }
+
+        tr.fold {
+            visibility: collapse;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        /* display properties to complete the assignment comment */
+        .disp-none {
+            display: none;
+        }
+
+        .disp-inline {
+            display: inline;
+            background-color: lightgray;
+        }
+
+        .disp-block {
+            display: block;
+            background-color: lightblue;
+        }
+
+        .disp-contents {
+            display: contents;
+        }
+
+        .disp-list {
+            display: list-item;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testing visibility and display properties</h1>
+
+    <h2 class="show-me">This heading is set to visible</h2>
+
+    <h2 class="hide-me">This heading is set to hidden</h2>
+
+    <p>A hidden element still takes up space, leaving a blank gap.</p>
+
+    <table>
+        <tr>
+            <td>Row</td>
+            <td>One</td>
+        </tr>
+        <tr class="fold">
+            <td>Row</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Three</td>
+        </tr>
+    </table>
+
+    <br>
+    <h2>Display Options</h2>
+    <p class="disp-none">This text has display: none so it disappears entirely.</p>
+    <div class="disp-inline">This div acts like inline text.</div>
+    <span class="disp-block">This span acts like a block element.</span>
+    <div class="disp-contents">This container disappears but shows its contents.</div>
+    <div class="disp-list">This div turns into a list item bullet.</div>
+
+</body>
+
+</html>

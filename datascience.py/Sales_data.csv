@@ -1,0 +1,11 @@
+﻿OrderID,Category,Product,Price,Quantity,Region
+1,Electronics,Laptop,800,2,North
+2,Electronics,Phone,500,3,South
+3,Furniture,Chair,150,5,East
+4,Furniture,Table,300,2,West
+5,Clothing,Shirt,40,10,North
+6,Clothing,Jeans,60,6,South
+7,Electronics,Tablet,300,4,East
+8,Furniture,Sofa,700,1,West
+9,Clothing,Jacket,120,2,North
+10,Electronics,Headphones,100,5,South

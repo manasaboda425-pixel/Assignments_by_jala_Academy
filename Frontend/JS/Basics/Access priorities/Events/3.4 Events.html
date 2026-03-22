@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function saveCookie(key, val, days) {
+            const timeObj = new Date();
+            timeObj.setTime(timeObj.getTime() + days * 24 * 60 * 60 * 1000);
+            let expiry = "expires=" + timeObj.toUTCString();
+            document.cookie = key + "=" + val + ";" + expiry + ";path=/";
+        }
+
+        function fetchCookie(key) {
+            let lookup = key + "=";
+            let decoded = decodeURIComponent(document.cookie);
+            let segments = decoded.split(";");
+            for (let i = 0; i < segments.length; i++) {
+                let item = segments[i];
+                while (item.charAt(0) == " ") {
+                    item = item.substring(1);
+                }
+                if (item.indexOf(lookup) == 0) {
+                    return item.substring(lookup.length, item.length);
+                }
+            }
+            return "";
+        }
+
+        function verifyUser() {
+            let guest = fetchCookie("guestID");
+            if (guest != "") {
+                alert("Hello again, " + guest);
+            } else {
+                guest = prompt("Please enter your name:", "");
+                if (guest != "" && guest != null) {
+                    saveCookie("guestID", guest, 14);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="verifyUser()">
+    <h1>Cookie Testing Page</h1>
+    <p>This page checks for a saved name and greets you if found.</p>
+</body>
+
+</html>

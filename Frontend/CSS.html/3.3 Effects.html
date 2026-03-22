@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="3.3 Effects.css" />
+</head>
+
+<body>
+    <h2>Static Position</h2>
+    <p>
+        An element with position: static; flows normally with the rest of the page layout. It does not take
+        top/bottom/left/right properties:
+    </p>
+
+    <div class="box-static">This box uses position: static;</div>
+
+    <h2>Relative Position</h2>
+    <p>
+        An element with position: relative; is placed relative to where it would normally be:
+    </p>
+
+    <div class="box-relative">This box uses position: relative;</div>
+
+    <h2>Fixed Position</h2>
+    <p>
+        An element with position: fixed; stays firmly in one spot on the screen, even if you scroll down the page:
+    </p>
+
+    <div class="box-fixed">Fixed Item</div>
+
+    <h2>Absolute Position</h2>
+    <p>
+        An element with position: absolute; places itself relative to the nearest positioned parent container:
+    </p>
+
+    <div class="box-parent">
+        This container has position: relative;
+        <div class="box-absolute">This box has position: absolute;</div>
+    </div>
+
+    <p>
+        Try to <b>scroll</b> down the page to see the sticky effect in action.
+    </p>
+
+    <div class="box-sticky">Sticky Header</div>
+    <div style="padding-bottom: 2000px">
+        <p>
+            As you scroll past, the sticky element will attach itself to the top (top: 0).
+        </p>
+        <p>Scroll back up to release it.</p>
+        <p>
+            Filler text to create a scrollbar.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris.
+        </p>
+        <p>
+            More filler text.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+    </div>
+</body>
+
+</html>

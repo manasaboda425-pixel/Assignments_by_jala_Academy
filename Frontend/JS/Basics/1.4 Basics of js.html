@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>
+        Q6: Demonstrating how "use strict" prevents using undeclared variables
+        within a function scope.
+    </p>
+
+    <script>
+        // This is allowed because it is in the global scope without strict mode
+        valA = 10;
+
+        runTest();
+
+        function runTest() {
+            "use strict";
+            // This will trigger a ReferenceError because valB hasn't been declared with var, let, or const
+            valB = 25;
+        }
+    </script>
+</body>
+
+</html>

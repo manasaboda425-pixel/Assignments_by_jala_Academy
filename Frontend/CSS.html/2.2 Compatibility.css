@@ -1,0 +1,20 @@
+
+ul.list-one {
+    list-style-type: circle;
+    /* changing list style format */
+}
+
+ul.list-two {
+    list-style-type: square;
+    /* changing list style format */
+}
+
+ol.list-three {
+    list-style-type: upper-roman;
+    /* changing list style format */
+}
+
+ol.list-four {
+    list-style-type: lower-alpha;
+    /* changing list style format */
+}

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Navigation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .content-box {
+            /* Content area styles */
+            width: 100vw;
+            height: 40vh;
+            background-color: #ff9f43;
+            font-size: 45px;
+            color: white;
+            text-align: center;
+            margin: 12px 4px;
+        }
+
+        .odd-box {
+            background-color: #5f27cd;
+        }
+
+        .navbar {
+            /* Menu styles */
+            width: 100vw;
+            height: 40vh;
+            background-color: #222f3e;
+            font-size: 24px;
+            text-align: center;
+            margin: 12px 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nav-link {
+            /* Anchor tag styles */
+            color: white;
+            background-color: #10ac84;
+            height: 35px;
+            width: 85px;
+            padding: 5px;
+            border: 2px solid #ccc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#area1" class="nav-link">Link 1</a>
+        <a href="#area2" class="nav-link">Link 2</a>
+        <a href="#area3" class="nav-link">Link 3</a>
+        <a href="#area4" class="nav-link">Link 4</a>
+    </div>
+
+    <div class="content-box odd-box" id="area1">Area 1</div>
+    <div class="content-box" id="area2">Area 2</div>
+    <div class="content-box odd-box" id="area3">Area 3</div>
+    <div class="content-box" id="area4">Area 4</div>
+</body>
+
+</html>

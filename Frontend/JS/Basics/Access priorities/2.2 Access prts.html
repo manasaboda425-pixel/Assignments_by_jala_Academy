@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q2 Demonstrating call() and apply()</h2>
+
+    <p id="result"></p>
+
+    <script>
+        const dataHelper = {
+            showInfo: function (state, zip) {
+                return (
+                    this.fname + " " + this.lname + " - " + state + " (" + zip + ")"
+                );
+            },
+        };
+
+        const user = {
+            fname: "Karan",
+            lname: "Singh",
+        };
+
+        /* The main difference is that apply() takes arguments as an array,
+           while call() takes them individually.
+        */
+
+        // Using apply with an array
+        document.getElementById("result").innerHTML = dataHelper.showInfo.apply(
+            user,
+            ["Delhi", "110001"]
+        );
+
+        // Using call with individual strings
+        document.getElementById("result").innerHTML = dataHelper.showInfo.call(
+            user,
+            "Delhi",
+            "110001"
+        );
+    </script>
+</body>
+
+</html>

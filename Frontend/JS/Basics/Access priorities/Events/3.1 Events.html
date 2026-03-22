@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q1 Event Listener: Display Current Time</h2>
+
+    <button id="show-date-btn">Get Date and Time</button>
+
+    <p id="result-display"></p>
+
+    <script>
+        // Selecting the button and adding a click event listener
+        document.getElementById("show-date-btn").addEventListener("click", updateTime);
+
+        function updateTime() {
+            // Using toLocaleString() to make the date look a bit cleaner
+            document.getElementById("result-display").innerHTML = new Date().toLocaleString();
+        }
+    </script>
+</body>
+
+</html>

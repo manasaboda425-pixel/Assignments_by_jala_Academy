@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q4 Counter using Getters and Setters</h2>
+
+    <p id="result-display"></p>
+
+    <script>
+        // Initialize the data object
+        const dataObj = { countValue: 0 };
+
+        // Configure Getters for simple actions
+        Object.defineProperty(dataObj, "clear", {
+            get: function () {
+                this.countValue = 0;
+            }
+        });
+
+        Object.defineProperty(dataObj, "stepUp", {
+            get: function () {
+                this.countValue++;
+            }
+        });
+
+        Object.defineProperty(dataObj, "stepDown", {
+            get: function () {
+                this.countValue--;
+            }
+        });
+
+        // Configure Setters for actions requiring a value
+        Object.defineProperty(dataObj, "increaseBy", {
+            set: function (amt) {
+                this.countValue += amt;
+            }
+        });
+
+        Object.defineProperty(dataObj, "decreaseBy", {
+            set: function (amt) {
+                this.countValue -= amt;
+            }
+        });
+
+        // Executing the logic
+        dataObj.clear;         // Resets to 0
+        dataObj.increaseBy = 100; // Adds 100
+        dataObj.decreaseBy = 40;  // Subtracts 40
+        dataObj.stepUp;        // Adds 1
+        dataObj.stepDown;      // Subtracts 1
+
+        // Outputting the final result
+        document.getElementById("result-display").innerHTML = "Final Value: " + dataObj.countValue;
+    </script>
+</body>
+
+</html>

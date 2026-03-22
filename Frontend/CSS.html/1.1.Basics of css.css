@@ -1,0 +1,11 @@
+
+body {
+    background-color: lightgreen;
+    /* this sets the background color to green */
+}
+
+h1 {
+    color: darkred;
+    /* this changes the heading text color to dark red */
+    margin-left: 15px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Q1 Testing 'this' and hiding elements</h1>
+
+    <p id="output"></p>
+    <button onclick="hideMsg()" id="action-btn">Click here</button>
+
+    <script>
+        // Function to make the paragraph disappear
+        function hideMsg() {
+            document.getElementById("output").style.display = "none";
+        }
+
+        // Object using 'this' to get properties
+        const employee = {
+            fname: "AMIT",
+            lname: "SHARMA",
+            empId: 1024,
+            getName: function () {
+                return this.fname + " " + this.lname;
+            },
+        };
+
+        // Display the name on page load
+        document.getElementById("output").innerHTML = employee.getName();
+    </script>
+</body>
+
+</html>

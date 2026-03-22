@@ -1,0 +1,9 @@
+
+div {
+    border-style: inset outset ridge groove;
+    /* defining 4 border styles */
+    border-width: 5px;
+    /* defining border size */
+    border-color: darkorange;
+    /* defining border colour */
+}

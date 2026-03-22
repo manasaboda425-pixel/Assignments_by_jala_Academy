@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Q5 Understanding JavaScript Hoisting</h2>
+    <p id="result-box"></p>
+
+    <script>
+        var a = 12; // Initializing variable 'a'
+        var b;      // Declaring variable 'b'
+
+        var output = document.getElementById("result-box");
+
+        /* At this point, 'a' is 12, but 'b' is undefined
+           because the assignment happens later in the script.
+        */
+        output.innerHTML = "Value A: " + a + " | Value B: " + b;
+
+        b = 25; // Now 'b' is assigned a value
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+/*below are the attributes for each type of css blocks*/
+div.box-static {
+    position: static;
+    border: 3px solid #ff8c00;
+}
+
+div.box-relative {
+    position: relative;
+    left: 40px;
+    border: 3px solid #ff8c00;
+}
+
+div.box-fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 250px;
+    border: 3px solid #ff8c00;
+}
+
+div.box-parent {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border: 3px solid #ff8c00;
+}
+
+div.box-absolute {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 180px;
+    height: 90px;
+    border: 3px solid #ff8c00;
+}
+
+div.box-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    background-color: #ffd700;
+    border: 2px solid #ff8c00;
+}

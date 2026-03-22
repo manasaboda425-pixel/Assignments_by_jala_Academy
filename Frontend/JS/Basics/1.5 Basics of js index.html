@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Array: Descending Sort</h2>
+
+    <p>The sort() method organizes elements alphabetically, and reverse() flips their order.</p>
+    <p>
+        Combining both allows you to display a list in reverse alphabetical (descending) order:
+    </p>
+
+    <p id="original-list"></p>
+    <p id="sorted-list"></p>
+
+    <script>
+        // Initialize an array of cities
+        const cities = [
+            "Tokyo",
+            "Paris",
+            "London",
+            "New York",
+            "Berlin",
+            "Mumbai",
+            "Sydney",
+        ];
+
+        // Display the initial unsorted array
+        document.getElementById("original-list").innerHTML = "Original: " + cities.join(", ");
+
+        // Sort alphabetically (A-Z)
+        cities.sort();
+
+        // Reverse the sorted order (Z-A)
+        cities.reverse();
+
+        // Display the final result
+        document.getElementById("sorted-list").innerHTML = "Descending: " + cities.join(", ");
+    </script>
+</body>
+
+</html>
